@@ -24,6 +24,28 @@ export const TRANSLATIONS: Record<string, TranslationData> = {
       chartTitle: "Chiến lược phân bổ quỹ đất",
       chartLabels: ['Lõi sản xuất', 'Du lịch', 'R&D']
     },
+    culture: {
+      title: "Giá trị Văn hóa & Đạo đức",
+      description: "Chúng tôi chuyển hóa các triết lý nhân sinh bền vững thành bộ quy tắc ứng xử thực tiễn trong kinh doanh.",
+      items: [
+        { icon: "🌱", title: "Gieo hạt - Gặt quả", desc: "Mọi kết quả kinh doanh đều bắt nguồn từ hành động chính trực hôm nay." },
+        { icon: "🌊", title: "Thích nghi linh hoạt", desc: "Hiểu rõ quy luật thay đổi để biến thách thức thành cơ hội mới." },
+        { icon: "🤝", title: "Lợi mình - Lợi người", desc: "Tạo ra giá trị cho cộng đồng và môi trường là nền tảng của lợi nhuận." },
+        { icon: "🧘", title: "Tập trung tuyệt đối", desc: "Làm việc với sự hiện diện trọn vẹn để đạt hiệu suất và chất lượng cao nhất." },
+        { icon: "🔥", title: "Nỗ lực không ngừng", desc: "Kiên trì vượt khó với tinh thần cầu tiến và ý chí mạnh mẽ như tre xanh." }
+      ]
+    },
+    team: {
+      title: "Hội đồng sáng lập & Vận hành",
+      description: "Sự hội tụ của 5 chuyên gia nòng cốt đảm bảo dự án vận hành đúng tiến độ và minh bạch tài chính cho mục tiêu IPO.",
+      members: [
+        { role: "IPO & Chiến lược", name: "Chủ tịch", exp: "Hơn 15 năm KN tư vấn niêm yết & M&A" },
+        { role: "Tài chính (CFO)", name: "Trụ cột Tài chính", exp: "Kiểm soát dòng tiền & Minh bạch đầu tư" },
+        { role: "Vận hành (COO)", name: "Trụ cột Vận hành", exp: "Triển khai dự án thực địa & Hệ thống" },
+        { role: "Lâm nghiệp (R&D)", name: "Trụ cột Kỹ thuật", exp: "Chuyên gia giống tre & Quy trình hữu cơ" },
+        { role: "Công nghệ (CTO)", name: "Trụ cột Số hóa", exp: "Phát triển App & Hệ thống quản lý Carbon" }
+      ]
+    },
     ecosystem: {
       title: "Hệ sinh thái 5 Trụ cột",
       description: "Đa dạng hóa rủi ro bằng 5 dòng doanh thu liên kết. Sử dụng mô hình \"Trả trước\" để tài trợ cho các tài sản dài hạn.",
@@ -88,6 +110,28 @@ export const TRANSLATIONS: Record<string, TranslationData> = {
       },
       chartTitle: "Land Allocation Strategy",
       chartLabels: ['Production Core', 'Tourism', 'R&D']
+    },
+    culture: {
+      title: "Culture & Ethics",
+      description: "We transform sustainable life philosophies into practical business conduct rules.",
+      items: [
+        { icon: "🌱", title: "Seeds & Harvest", desc: "All business outcomes stem from integrity-driven actions today." },
+        { icon: "🌊", title: "Fluid Adaptation", desc: "Understanding change to turn challenges into new opportunities." },
+        { icon: "🤝", title: "Mutual Prosperity", desc: "Creating value for community & planet is the foundation of profit." },
+        { icon: "🧘", title: "Total Focus", desc: "Working with full presence to achieve peak performance & quality." },
+        { icon: "🔥", title: "Relentless Effort", desc: "Persistently overcoming hurdles with growth mindset and bamboo-like grit." }
+      ]
+    },
+    team: {
+      title: "Founding Board & Operations",
+      description: "A convergence of 5 core experts ensuring project milestones and financial transparency for the IPO goal.",
+      members: [
+        { role: "IPO & Strategy", name: "Chairman", exp: "15+ yrs in IPO advisory & M&A" },
+        { role: "Finance (CFO)", name: "Financial Pillar", exp: "Cashflow control & Transparency" },
+        { role: "Operations (COO)", name: "Operations Pillar", exp: "Project execution & Systems" },
+        { role: "Forestry (R&D)", name: "Technical Pillar", exp: "Bamboo species & Organic processes" },
+        { role: "Technology (CTO)", name: "Digital Pillar", exp: "App Dev & Carbon Management System" }
+      ]
     },
     ecosystem: {
       title: "The 5-Pillar Ecosystem",

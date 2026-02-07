@@ -23,6 +23,16 @@ export interface TranslationData {
     chartTitle: string;
     chartLabels: string[];
   };
+  culture: {
+    title: string;
+    description: string;
+    items: Array<{ icon: string; title: string; desc: string }>;
+  };
+  team: {
+    title: string;
+    description: string;
+    members: Array<{ role: string; name: string; exp: string }>;
+  };
   ecosystem: {
     title: string;
     description: string;

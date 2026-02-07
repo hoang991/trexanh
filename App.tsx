@@ -5,6 +5,8 @@ import { Language } from './types';
 
 // Components
 import FoundationSection from './components/FoundationSection';
+import CultureSection from './components/CultureSection';
+import TeamSection from './components/TeamSection';
 import EcosystemSection from './components/EcosystemSection';
 import MarketSection from './components/MarketSection';
 import InvestmentSection from './components/InvestmentSection';
@@ -86,6 +88,8 @@ const App: React.FC = () => {
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20 space-y-12">
         <FoundationSection content={t.foundation} />
+        <CultureSection content={t.culture} />
+        <TeamSection content={t.team} />
         <EcosystemSection content={t.ecosystem} />
         <MarketSection content={t.market} />
         <InvestmentSection content={t.investment} />
