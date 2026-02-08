@@ -11,6 +11,27 @@ export interface TranslationData {
       carbon: string;
     };
   };
+  visionMission: {
+    slogan: string;
+    vision: {
+      title: string;
+      content: string;
+    };
+    mission: {
+      title: string;
+      items: Array<{ title: string; desc: string }>;
+    };
+    coreValues: {
+      title: string;
+      subtitle: string; // TRE - TÂM - TÍN - TUỆ
+      items: Array<{
+        char: string;
+        title: string;
+        content: string;
+        action: string;
+      }>;
+    };
+  };
   foundation: {
     title: string;
     description: string;
@@ -24,9 +45,16 @@ export interface TranslationData {
     chartLabels: string[];
   };
   culture: {
-    title: string;
+    title: string; // TRỤC VĂN HÓA
+    subtitle: string; // GỐC TRE VỮNG CHÃI
     description: string;
-    items: Array<{ icon: string; title: string; desc: string }>;
+    items: Array<{ title: string; desc: string }>;
+  };
+  operations: {
+    title: string; // HỆ THỐNG VẬN HÀNH
+    subtitle: string; // BỘ MÁY TỰ VẬN HÀNH
+    description: string;
+    items: Array<{ title: string; desc: string }>;
   };
   team: {
     title: string;
@@ -38,6 +66,62 @@ export interface TranslationData {
     description: string;
     chartLabels: string[];
     pillars: Array<{ title: string; desc: string }>;
+  };
+  digital: {
+    game: {
+      title: string;
+      subtitle: string;
+      description: string;
+      items: Array<{ title: string; desc: string }>;
+    };
+    app: {
+      title: string;
+      description: string;
+      items: Array<{ title: string; desc: string }>;
+    };
+    rewards: {
+      title: string;
+      subtitle: string;
+      items: Array<{ title: string; desc: string }>;
+    };
+  };
+  gamePlan: {
+    title: string;
+    subtitle: string;
+    objectives: string[];
+    principles: Array<{ title: string; desc: string }>;
+    stages: {
+      offline: {
+        title: string;
+        subtitle: string;
+        games: Array<{
+          title: string;
+          target?: string;
+          content: string; // Represents Activity/Gameplay
+          value: string;
+          product?: string; // Related product
+        }>;
+      };
+      online: {
+        title: string;
+        subtitle: string;
+        games: Array<{
+          title: string;
+          target: string;
+          content: string;
+          value: string;
+        }>;
+      };
+      rewards: {
+        title: string;
+        subtitle: string;
+        description: string;
+        items: Array<{
+          title: string;
+          desc: string;
+        }>;
+      };
+    };
   };
   market: {
     leafTitle: string;

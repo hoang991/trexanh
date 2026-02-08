@@ -5,9 +5,13 @@ import { Language } from './types';
 
 // Components
 import FoundationSection from './components/FoundationSection';
+import VisionMissionSection from './components/VisionMissionSection';
 import CultureSection from './components/CultureSection';
+import OperationsSection from './components/OperationsSection';
 import TeamSection from './components/TeamSection';
 import EcosystemSection from './components/EcosystemSection';
+import DigitalLayerSection from './components/DigitalLayerSection';
+import GamePlanSection from './components/GamePlanSection';
 import MarketSection from './components/MarketSection';
 import InvestmentSection from './components/InvestmentSection';
 import RoadmapSection from './components/RoadmapSection';
@@ -86,14 +90,30 @@ const App: React.FC = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20 space-y-12">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20 space-y-16">
         <FoundationSection content={t.foundation} />
-        <CultureSection content={t.culture} />
-        <TeamSection content={t.team} />
+        
+        {/* Strategic Vision & Values */}
+        <VisionMissionSection content={t.visionMission} />
+
+        {/* Core Values & Operations */}
+        <div className="space-y-8">
+          <CultureSection content={t.culture} />
+          <OperationsSection content={t.operations} />
+        </div>
+
         <EcosystemSection content={t.ecosystem} />
+        
+        {/* Digital & Gamification Layer */}
+        <div className="space-y-8">
+          <DigitalLayerSection content={t.digital} />
+          <GamePlanSection content={t.gamePlan} />
+        </div>
+        
         <MarketSection content={t.market} />
         <InvestmentSection content={t.investment} />
         <RoadmapSection content={t.roadmap} />
+        <TeamSection content={t.team} />
       </main>
 
       {/* Footer */}
